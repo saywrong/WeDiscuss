@@ -1,0 +1,38 @@
+#div_login_header{
+    height:200px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+#login_head_img{
+    width:900px;
+    height:200px;
+}
+
+
+#div_login_middle{
+    width: 100%;
+
+}
+    #div_login_sidebar{
+        width:600px;
+        float:left;
+    }
+
+    #div_login_main{
+        width:300px;
+        float: left;
+        padding-top: 100px;
+        text-align: center;
+        height:160px;
+        background:url("/static/images/login_main_bkg.png");
+    }
+
+    #id_login_name,#id_password{
+        width:200px;
+    }
+
+#div_login_footer{
+    clear: both;
+    text-align: center;
+}
