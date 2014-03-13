@@ -2,6 +2,7 @@
     height:200px;
     margin-bottom: 18px;
     width: 100%;
+    border-bottom: 5px #BBFFEE solid;
 }
 
 #login_head_img{
@@ -12,7 +13,6 @@
 
 #div_login_middle{
     width: 100%;
-
 }
     #div_login_sidebar{
         width:600px;
@@ -20,19 +20,17 @@
     }
 
     #div_login_main{
-        width:300px;
+        width:280px;
         float: left;
         padding-top: 100px;
-        text-align: center;
+        text-align: right;
         height:160px;
-        background:url("/static/images/login_main_bkg.png");
-    }
-
-    #id_login_name,#id_password{
-        width:200px;
+        border-left: 2px #BBFFEE solid;
+        /*background:url("/static/images/login_main_bkg.png");*/
     }
 
 #div_login_footer{
+    border-top: 4px #BBFFEE solid;
     clear: both;
     text-align: center;
 }

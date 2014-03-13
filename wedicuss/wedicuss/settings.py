@@ -67,6 +67,7 @@ DATABASES = {
 
 TEMPLATE_DIRS = (
     r'templates',
+    r"user_manage\templates",
 )
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/

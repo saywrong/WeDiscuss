@@ -1,5 +1,12 @@
 #page{
     width: 900px;
     margin: 0px auto;
+    background-color: white;
 }
 
+body{
+    /*background-image:url("/static/images/back_ground.jpg");*/
+    background-color: #BBFFEE;
+    background-position:center; 
+    background-repeat:no-repeat;
+}

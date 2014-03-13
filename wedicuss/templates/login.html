@@ -3,6 +3,7 @@
 {% block link %}
 <link rel="stylesheet" type="text/css" href="/static/stylesheets/base.css">
 <link rel="stylesheet" type="text/css" href="/static/stylesheets/login_page.css">
+<link rel="stylesheet" type="text/css" href="/static/stylesheets/login_form.css">
 {% endblock %}
 {% block title %}登陆到WeDicuss{% endblock %}
 
@@ -10,11 +11,11 @@
 <div id="div_login_header">
 
     <img src="/static/images/login_head.png" alt="WeDicuss" id="login_head_img">
-
 </div>
 {% endblock %}
 
 {% block middle %}
+
 <div id="div_login_middle">
     {% block sidebar %}
     <div id="div_login_sidebar">
@@ -24,13 +25,7 @@
 
     {% block main %}
     <div id="div_login_main">
-        <form method="post" id="div_signup_login">
-            <table>
-                {{ form.as_table }}
-            </table>
-            <input type="submit" value="登陆">
-            <input type="submit" value="注册">
-        </form>
+        {{login_form}}
     </div>
     {% endblock %}
 </div>
