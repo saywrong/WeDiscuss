@@ -10,17 +10,15 @@ class User_group(models.Model):
         return self.name
 
 class User_info(models.Model):
-    name = models.CharField(max_length = 20)
+    user = models.OneToOneField(User)
     nickname = models.CharField(max_length = 20)
-    password = models.CharField(max_length = 20)
-    email = models.EmailField()
     state = models.IntegerField()
     coins = models.IntegerField()
     group =  models.ForeignKey(User_group)
 
     def __unicode__(self):
         return u"name:%s state:%d" \
-        %(self.name,self.state)
+        %(self.user.username,self.state)
 
 
 class User_relation(models.Model):
