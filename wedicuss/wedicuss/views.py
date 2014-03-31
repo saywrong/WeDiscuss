@@ -9,8 +9,8 @@ import wedicuss.settings
 
 # @csrf_protect
 def welcome(request):
-    t = get_template("login.html")
     um = User_manage()
     form = um.get_login_form()
     #form = login_form(initial={"login_name":"用户名","password":"密码"})
-    return render_to_response("login.html", {'login_form': form},context_instance=RequestContext(request))
+    return render_to_response("welcome.html", {'login_form': form},\
+        context_instance=RequestContext(request))

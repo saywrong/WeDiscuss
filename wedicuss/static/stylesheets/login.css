@@ -1,0 +1,19 @@
+#page{
+    margin-top: 200px;
+    width:280px;
+}
+
+#div_login_middle{
+    width: 100%;
+}
+
+    #div_login_main{
+        width:100%;
+        text-align:right;
+        height:160px;
+        border-top: 1px #000000 solid;
+        border-right: 1px #000000 solid;
+        border-bottom: 1px #000000 solid;
+        border-left: 1px #000000 solid;
+        /*background:url("/static/images/login_main_bkg.png");*/
+    }
