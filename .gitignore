@@ -1,3 +1,4 @@
 *.pyc
 *.~
 ~$WeDicuss.mmap.~$lock
+*.sqlite3

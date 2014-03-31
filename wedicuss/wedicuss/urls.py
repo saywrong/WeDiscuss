@@ -4,6 +4,7 @@ from django.contrib import admin
 
 from wedicuss.views import * 
 import user_manage.views as um_views
+import wd_mainframe.views as mf_views
 import wedicuss.settings
 admin.autodiscover()
 
@@ -15,6 +16,8 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': wedicuss.settings.STATIC_PATH}), 
     (r"^login_auth/",um_views.login_auth),
-    (r"^login/$",um_views.login),
+    #(r"^login/$",um_views.login),
     (r"^register/$",um_views.register),
+    (r"^first_page/$",mf_views.first_page),
+    (r"^logout/$",um_views.logout)
 )

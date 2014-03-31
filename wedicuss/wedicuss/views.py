@@ -1,5 +1,5 @@
 #coding:utf-8
-from django.http import HttpResponse
+from django.http import HttpResponse,HttpResponseRedirect
 from django.template.loader import get_template
 from django.template import Context,RequestContext
 from django.shortcuts import render_to_response
@@ -9,6 +9,8 @@ import wedicuss.settings
 
 # @csrf_protect
 def welcome(request):
+    if  request.user.is_authenticated():
+        return HttpResponseRedirect("/first_page/")
     um = User_manage()
     form = um.get_login_form()
     #form = login_form(initial={"login_name":"用户名","password":"密码"})

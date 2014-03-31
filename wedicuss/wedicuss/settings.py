@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     #"wediscuss_main",
     "user_manage",
+    "wd_mainframe",
 )
 
 MIDDLEWARE_CLASSES = (
