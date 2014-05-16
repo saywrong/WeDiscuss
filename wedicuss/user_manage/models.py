@@ -22,7 +22,7 @@ class User_info(models.Model):
 
 
 class User_relation(models.Model):
-    user_a = models.ForeignKey(User_info,related_name = "myid")
-    user_b = models.ForeignKey(User_info,related_name = "friendid")
+    user_a = models.ForeignKey(User,related_name = "myid")
+    user_b = models.ForeignKey(User,related_name = "friendid")
     typeid = models.IntegerField()
     memo_name = models.CharField(max_length = 20)

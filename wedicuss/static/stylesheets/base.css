@@ -10,3 +10,10 @@ body{
     background-position:center; 
     background-repeat:no-repeat;
 }
+
+#div_footer{
+    border-top: 4px #BBFFEE solid;
+    clear: both;
+    height: 50px;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+#div_main_header{
+    height:50px;
+    margin-bottom: 18px;
+    width: 100%;
+    border-bottom: 5px #BBFFEE solid;
+}
+
+#div_main_middle{
+    width: 100%;
+}
+    #div_main_sidebar{
+        width:280px;
+        height: 768px;
+        float:left;
+    }
+
+    #div_main_main{
+        width:600px;
+        float: left;
+       /* padding-top: 100px;*/
+        text-align: right;
+        height:768px;
+        border-left: 2px #BBFFEE solid;
+        /*background:url("/static/images/main_main_bkg.png");*/
+    }
+

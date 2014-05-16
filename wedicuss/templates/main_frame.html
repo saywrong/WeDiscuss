@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
 {% block link %}
-
+<link rel="stylesheet" type="text/css" href="/static/stylesheets/base.css">
+<link rel="stylesheet" type="text/css" href="/static/stylesheets/main_frame.css">
 {% endblock %}
 
 {% block title %}WeDicuss{% endblock %}
@@ -14,12 +15,18 @@
 {% endblock %}
 
 {% block middle %}
+<div id="div_main_middle">
 
     {% block sidebar %}
+        <div id="div_main_sidebar">
 
+        </div>
     {% endblock %}
 
     {% block main %}
-    {% endblock %}
+        <div id="div_main_main">
 
+        </div>
+    {% endblock %}
+</div>
 {% endblock %}
