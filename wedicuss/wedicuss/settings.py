@@ -66,9 +66,13 @@ DATABASES = {
     }
 }
 
+TEMPLATE_LOADERS = [
+    "django.template.loaders.filesystem.Loader",
+    "django.template.loaders.app_directories.Loader",
+]
+
 TEMPLATE_DIRS = (
     r'templates',
-    r"user_manage\templates",
 )
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -83,18 +87,20 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
 
 STATIC_ROOT = ''
-STATIC_PATH = os.path.join(BASE_DIR,'static').replace('\\','/')
+#STATIC_PATH = os.path.join(BASE_DIR,'static').replace('\\','/')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_URL = '/site_media/static/'
 # add property : ADMIN_MEDIA_ROOT BY slider
 # ADMIN_MEDIA_ROOT = '/static/admin/'
 # Additional locations of static files

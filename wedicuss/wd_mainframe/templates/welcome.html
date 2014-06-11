@@ -1,25 +1,30 @@
 {% extends "base.html" %}
 
-{% block link %}
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/base.css">
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/welcome.css">
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/login_form.css">
-{% endblock %}
+{% load staticfiles %}
+
+
 {% block title %}登陆到WeDicuss{% endblock %}
+
+{% block style_base %}
+<link rel="stylesheet" type="text/css" href={% static "css/base.css" %}>
+<link rel="stylesheet" type="text/css" href={% static "css/welcome.css" %}>
+<link rel="stylesheet" type="text/css" href={% static "css/login_form.css" %}>
+{% endblock %}
+
 
 {% block header %}
 <div id="div_login_header">
 
-    <img src="/static/images/login_head.png" alt="WeDicuss" id="login_head_img">
+    <img src={% static "images/login_head.png" %} alt="WeDicuss" id="login_head_img">
 </div>
 {% endblock %}
 
-{% block middle %}
+{% block body_base %}
 
 <div id="div_login_middle">
     {% block sidebar %}
     <div id="div_login_sidebar">
-        <img src="/static/images/longin_side.png">
+        <img src={% static "images/longin_side.png" %}>
     </div>
     {% endblock %}
 

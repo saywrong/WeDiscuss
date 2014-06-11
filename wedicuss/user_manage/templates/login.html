@@ -1,20 +1,23 @@
 {% extends "base.html" %}
 
-{% block link %}
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/base.css">
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/login.css">
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/login_form.css">
-{% endblock %}
+{% load staticfiles %}
+
 {% block title %}登陆到WeDicuss{% endblock %}
+
+{% block style_base %}
+<link rel="stylesheet" type="text/css" href={% static "css/base.css" %}>
+<link rel="stylesheet" type="text/css" href={% static "css/login.css" %}>
+<link rel="stylesheet" type="text/css" href={% static "css/login_form.css" %}>
+{% endblock %}
+
+
 
 {% block header %}
 {% endblock %}
 
-{% block middle %}
+{% block body_base %}
 
 <div id="div_login_middle">
-    {% block sidebar %}
-    {% endblock %}
 
     {% block main %}
 
@@ -30,5 +33,5 @@
 </div>
 {% endblock %}
 
-{% block footer %}
+{% block footer_base %}
 {% endblock %}

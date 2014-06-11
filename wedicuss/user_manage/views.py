@@ -11,8 +11,8 @@ from django.contrib import auth
 # Create your views here.
 
 def login_auth(request):
-    if  request.user.is_authenticated():
-        return HttpResponseRedirect("/first_page/")
+    # if  request.user.is_authenticated():
+    #     return HttpResponseRedirect("/first_page/")
         
     if not request.POST:
         error = False

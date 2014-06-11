@@ -1,4 +1,4 @@
-#page{
+#div_page{
     width: 900px;
     margin: 0px auto;
     background-color: white;
@@ -11,8 +11,8 @@ body{
     background-repeat:no-repeat;
 }
 
-#div_footer{
-    border-top: 4px #BBFFEE solid;
+footer{
+    #border-top: 4px #BBFFEE solid;
     clear: both;
     height: 50px;
     text-align: center;

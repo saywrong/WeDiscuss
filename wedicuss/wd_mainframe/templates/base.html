@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <title>
+            {% block title_base %}
+                {% block title %}{% endblock %}
+            {% endblock %}
+        </title>
+
+        {% block style_base %}
+            {% block extra_style %}{% endblock %}
+        {% endblock %}
+
+        {% block extra_head_base %}
+            {% block extra_head %}{% endblock %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <div id="div_page">
+        {% block header %}
+            <div id="div_header">
+            {% block topbar %}
+                {% block site_brand %}
+                {% endblock %}
+
+                {% block nav %}
+                {% endblock %}
+
+                {% block account_bar %}
+                {% endblock %}
+            {% endblock %}
+            </div>     
+        {% endblock %}
+
+        {% block body_base %}
+        <div id = "div_body">
+            {% block body %}
+            {% endblock %}
+        </div>
+        {% endblock %}
+
+        {% block footer_base %}
+            <footer>
+                <div id="div_footer">
+                    <hr />
+                    {% block footer %}
+                    <p>copyright &copy; 2014 WeDicuss,llc,all rights reserved.</p>
+                    {% endblock %}
+                </div>
+            </footer>
+        {% endblock %}
+
+        {% block script_base %}
+            {% block extra_script %}{% endblock %}
+        {% endblock %}
+        </div>
+
+
+    </body>
+</html>
