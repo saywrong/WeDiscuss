@@ -11,9 +11,23 @@ body{
     background-repeat:no-repeat;
 }
 
+#div_header{
+
+}
+
+#div_body{
+
+}
+
+
+
 footer{
     #border-top: 4px #BBFFEE solid;
     clear: both;
     height: 50px;
     text-align: center;
+}
+
+#div_footer{
+
 }

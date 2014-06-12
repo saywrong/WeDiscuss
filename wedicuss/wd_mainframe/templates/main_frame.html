@@ -1,21 +1,23 @@
 {% extends "base.html" %}
 
-
+{% load staticfiles %}
 
 {% block title %}WeDicuss{% endblock %}
 
 {% block style_base %}
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/base.css">
-<link rel="stylesheet" type="text/css" href="/static/stylesheets/main_frame.css">
+<link rel="stylesheet" type="text/css" href={% static "css/base.css" %}>
+<link rel="stylesheet" type="text/css" href={% static "css/main_frame.css" %}>
 {% endblock %}
 
 {% block site_brand %}
+<a href = "/main/home/">Wediscuss</a>
 {% endblock %}
 
 {% block nav %}
 {% endblock %}
 
 {% block account_bar %}
+{% include "_account_bar.html" %}
 {% endblock %}
 
 {% block body %}

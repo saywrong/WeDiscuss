@@ -12,7 +12,7 @@ from django.contrib import auth
 
 def login_auth(request):
     # if  request.user.is_authenticated():
-    #     return HttpResponseRedirect("/first_page/")
+    #     return HttpResponseRedirect("/main/home")
         
     if not request.POST:
         error = False
@@ -27,7 +27,7 @@ def login_auth(request):
     user = auth.authenticate(username = username,password = password)
     if user != None:
         auth.login(request,user)
-        return HttpResponseRedirect("/first_page/")
+        return HttpResponseRedirect("/main/home")
     else:
         error = True
         um = User_manage()

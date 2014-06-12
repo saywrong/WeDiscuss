@@ -30,7 +30,7 @@
 
     {% block main %}
     <div id="div_login_main">
-        <form action = "/login_auth/" method="post" id="div_signup_login">{% csrf_token %}
+        <form action = "account/login/" method="post" id="div_signup_login">{% csrf_token %}
         {{login_form}}
         </form>
     </div>
