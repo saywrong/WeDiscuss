@@ -4,21 +4,35 @@
 
 {% block title %}WeDicuss{% endblock %}
 
-{% block style_base %}
+{% block style %}
 <link rel="stylesheet" type="text/css" href={% static "css/base.css" %}>
 <link rel="stylesheet" type="text/css" href={% static "css/main_frame.css" %}>
 {% endblock %}
 
 {% block site_brand %}
-<a href = "/main/home/">Wediscuss</a>
+    <a href = "/main/home/">Wediscuss</a>
 {% endblock %}
 
-{% block nav %}
+{% block hor_nav %}
 {% endblock %}
 
 {% block account_bar %}
-{% include "_account_bar.html" %}
+    {% include "_account_bar.html" %}
 {% endblock %}
 
 {% block body %}
+    <div id="div_body_left">
+    {% block body_left %}
+    {% endblock %}
+    </div>
+
+    <div id="div_body_middle">
+    {% block body_middle %}
+    {% endblock %}
+    </div>
+
+    <div id="div_body_right">
+    {% block body_right %}
+    {% endblock %}
+    </div>
 {% endblock %}

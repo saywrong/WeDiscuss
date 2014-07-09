@@ -1,0 +1,32 @@
+#div_group_list{
+    margin: 10px;
+}
+
+#div_group_container{
+    margin: 5px;
+    padding: 5px;
+    border: 1px #888888 solid;
+    /*height: 100px;*/
+    /*background-color: lightgray;*/
+}
+
+#div_group_info{
+    margin: 5px;
+    padding: 5px;
+}
+
+#div_group_info_container{
+
+}
+
+#div_viewp_list{
+    margin: 5px;
+    padding: 5px;
+    /*border: 1px #888888 solid;*/
+}
+
+#div_viewpoint_container{
+    margin: 10px;
+    padding: 5px;
+    border: 1px #888888 solid;
+}

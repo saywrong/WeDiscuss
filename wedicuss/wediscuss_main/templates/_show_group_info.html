@@ -1,0 +1,15 @@
+<div id="div_group_info">
+<!-- show group info -->
+    <div id="div_group_info_container">
+    {{group_info.name}}
+    <hr/>
+    {{group_info.desc}}
+    </div>
+    <hr/>
+</div>
+
+<!-- show comment -->
+<div id="div_viewp_list">
+    <p>观点：</p>
+    {% include "_show_viewpoint_list.html" with viewp_list=viewpoint_list %}
+</div>

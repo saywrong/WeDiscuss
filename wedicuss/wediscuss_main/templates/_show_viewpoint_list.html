@@ -1,0 +1,13 @@
+
+{% for viewpoint in viewp_list %}
+    <div id="div_viewpoint_container">
+        {{viewpoint.content}}
+        <br/>
+        <br/>
+        <div style="text-align:right">
+            {{viewpoint.push_time}}
+            {{viewpoint.pusher}}
+        </div>
+        
+    </div>
+{% endfor %}

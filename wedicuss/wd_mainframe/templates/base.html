@@ -11,6 +11,7 @@
         </title>
 
         {% block style_base %}
+            {% block style %}{% endblock %}
             {% block extra_style %}{% endblock %}
         {% endblock %}
 
@@ -24,16 +25,22 @@
         {% block header %}
             <div id="div_header">
             {% block topbar %}
+                <div id="div_site_brand">
                 {% block site_brand %}
                 {% endblock %}
-
-                {% block nav %}
+                </div>
+                
+                <div id="div_hor_nav">
+                {% block hor_nav %}
                 {% endblock %}
-
+                
                 {% block account_bar %}
                 {% endblock %}
+                </div>
             {% endblock %}
-            </div>     
+
+            </div>
+            <hr/>  
         {% endblock %}
 
         {% block body_base %}

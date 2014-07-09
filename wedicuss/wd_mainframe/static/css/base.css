@@ -1,8 +1,3 @@
-#div_page{
-    width: 900px;
-    margin: 0px auto;
-    background-color: white;
-}
 
 body{
     /*background-image:url("/static/images/back_ground.jpg");*/
@@ -10,24 +5,39 @@ body{
     background-position:center; 
     background-repeat:no-repeat;
 }
+    #div_page{
+        width: 900px;
+        margin: 0px auto;
+        background-color: white;
+    }
 
-#div_header{
+        #div_header{
+            /*padding-top: 5px;*/
+            padding: 5px;
+            margin: 5px;
+            /*border-bottom: 1px #888888 solid;*/
+            height: 30px;
+        }
+            #div_site_brand{
+                float: left;
+            }
+            #div_hor_nav{
+                float: right;
+                height: 25px;
+            }
 
-}
-
-#div_body{
-
-}
+    #div_body{
+        height: 600px;
+        padding: 10px;
+    }
 
 
 
 footer{
-    #border-top: 4px #BBFFEE solid;
+    /*#border-top: 4px #BBFFEE solid;*/
+    padding: 10px;
     clear: both;
     height: 50px;
     text-align: center;
 }
 
-#div_footer{
-
-}

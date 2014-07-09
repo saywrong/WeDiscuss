@@ -1,0 +1,7 @@
+<div id="div_group_list">
+    {% for group in GROUP_LIST %}
+        <div id="div_group_container">
+            {% include "_group_brief.html" with group_info=group %}
+        </div>
+    {% endfor %}
+</div>

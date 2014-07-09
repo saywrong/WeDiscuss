@@ -1,6 +1,7 @@
 {% if request.user.is_authenticated %}
     {{ request.user.username }}
-    <a href="/account/logout/">登出</a>
+    <a href="/account/logout/"> 登出</a>
+
 {% else %}
     <a href="/account/login/">登录</a>
 {% endif %}

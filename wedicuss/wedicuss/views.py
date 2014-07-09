@@ -9,8 +9,8 @@ import wedicuss.settings
 
 # @csrf_protect
 def welcome(request):
-    # if  request.user.is_authenticated():
-    #     return HttpResponseRedirect("/first_page/")
+    if  request.user.is_authenticated():
+        return HttpResponseRedirect("main/home/")
     um = User_manage()
     form = um.get_login_form()
     #form = login_form(initial={"login_name":"用户名","password":"密码"})

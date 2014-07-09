@@ -80,6 +80,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
 "django.core.context_processors.tz",
 "django.core.context_processors.request",
 "django.contrib.messages.context_processors.messages",
+"wediscuss_main.context_processors.discuss_group"
 ]
 
 TEMPLATE_DIRS = (
